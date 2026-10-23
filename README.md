@@ -14,9 +14,7 @@
 
 这里有**量化交易策略**，用随机森林、XGBoost+SHAP 在聚宽平台回测，另有**可本地运行**的多资产风险平价策略，含完整特征工程与诊断。
 
-这里有**《陈深的故事》**——用 HTML/CSS/JavaScript 写成的互动叙事游戏，关于大模型变成人的 16 章人间烟火；昼夜交替、好感度系统、仙剑式探索地图、结局图鉴。
-
-这里有**千节点 Raft 分布式 KV 存储**、**LoRA 微调与 DPO 对齐**、**助手与智能体（DeepSeek·CAMEL）**、以及**大模型与计算机科学技术笔记**（6 份核心知识库）。
+这里有**千节点 Raft 分布式 KV 存储**、**LoRA 微调与 DPO 对齐**、**助手与智能体**、以及**大模型与计算机科学技术笔记**（6 份核心知识库）。
 
 ---
 
@@ -49,8 +47,6 @@ Project of ChenShen/
 │   ├── src/dsh_assistant/      # ★ Python 包：config/llm/tts/memory/camel/assistant/cli
 │   ├── tests/ · docs/ · examples/
 │   └── README.md               # 统一 CLI：dsh-assistant voice|camel
-│
-├── （《陈深的世界》已迁出为独立仓库 → GAME-CHENSHEN-S-WORLD）
 │
 ├── 大模型与计算机科学技术笔记/   # ★ 6 份核心笔记 + README 索引
 ├── Python全章节学习笔记/
@@ -91,11 +87,6 @@ python 量化策略（聚宽·回测）/quant_v14.py
 # 助手与智能体（需要 DeepSeek API Key）
 pip install -e "助手与智能体（DeepSeek·CAMEL）"
 dsh-assistant voice
-
-# 打开《陈深的故事》
-# 打开《陈深的世界》—— 已迁至独立仓库
-# git clone https://github.com/380992846-tech/GAME-CHENSHEN-S-WORLD.git
-# 然后双击 GAME-CHENSHEN-S-WORLD/game/index.html
 ```
 
 ---
@@ -119,7 +110,7 @@ dsh-assistant voice
 
 从共识协议到千节点存储，用 Go 与 C++17 各写一遍 Raft。C++ 版从零实现选举/日志复制/持久化/KV 状态机；Go 版放大到 etcd + Multi-Raft 千节点生产架构。
 
-### 助手与智能体（DeepSeek·CAMEL）
+### 助手与智能体
 
 标准 Python 包 + 统一 CLI：语音助手（DeepSeek + Edge TTS）与 CAMEL 角色化对话；`.env` 安全配置、超时+重试、线程安全原子写、12 单测、CI、完整文档。
 
@@ -154,7 +145,6 @@ ruff check tests "量化策略（聚宽·回测）/quant_features.py" LLM推理�
 - [x] 助手与智能体工程化（CLI 包 + 测试 + CI + 文档）
 - [ ] 真·多机分布式推理
 - [ ] 量化策略统一工程化 + 实盘风控
-- [ ] 《陈深的故事》更多结局与章节
 
 ---
 
